@@ -1,0 +1,7 @@
+[package]
+name = "tellurium-safety"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+mlua = { version = "0.11.6", features = ["luau"] }

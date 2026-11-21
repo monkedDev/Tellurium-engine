@@ -1,0 +1,7 @@
+[package]
+name = "tellurium-diagnostics"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+tellurium-bridge = { path = "../bridge" }

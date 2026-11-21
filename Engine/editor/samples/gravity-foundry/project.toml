@@ -1,0 +1,11 @@
+[project]
+name = "Gravity Foundry"
+description = "Watch Bullet simulate dropped crates and the domino run. Press Space or gamepad A to send the blue shuttle through the sensor. The orange status lamp rises when the trigger fires."
+
+[[input.contexts]]
+name = "Foundry"
+priority = 0
+bindings = [
+    { action = "SendShuttle", source = { button = { key = "Space" } } },
+    { action = "SendShuttle", source = { button = { gamepad = 4096 } } },
+]

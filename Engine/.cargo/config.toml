@@ -1,0 +1,7 @@
+[net]
+ssl-backend = "rustls-tls"
+git-fetch-with-cli = true
+
+[http]
+check-revoke = false
+multiplexing = false

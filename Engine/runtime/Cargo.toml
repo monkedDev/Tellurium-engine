@@ -1,0 +1,38 @@
+[package]
+name = "tellurium-runtime"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "tellurium_runtime"
+path = "src/main.rs"
+
+[features]
+default = []
+editor = ["dep:tellurium-builder", "dep:tellurium-editor", "dep:windows-sys", "dep:notify", "tellurium-scripting/editor", "profiling"]
+profiling = ["tellurium-bridge/profiling"]
+
+[dependencies]
+tellurium-serialization = { path = "../serialization" }
+tellurium-assets = { path = "../assets" }
+tellurium-diagnostics = { path = "../diagnostics" }
+tellurium-input = { path = "../input" }
+tellurium-bridge = { path = "../bridge" }
+raw-window-handle = "0.6"
+glam = "0.30"
+tellurium-platform = { path = "../platform" }
+tellurium-core = { path = "../core" }
+tellurium-scripting = { path = "../scripting" }
+log = "0.4"
+env_logger = "0.11"
+
+[target.'cfg(windows)'.dependencies]
+notify = { version = "8.2.0", optional = true }
+tellurium-builder = { path = "../builder", optional = true }
+tellurium-editor = { path = "../editor", optional = true }
+windows-sys = { version = "0.59", optional = true, features = ["Win32_Foundation", "Win32_UI_WindowsAndMessaging"] }
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+tempfile = "3"
+

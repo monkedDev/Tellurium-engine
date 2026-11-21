@@ -1,0 +1,11 @@
+[package]
+name = "tellurium-builder"
+version.workspace = true
+edition.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+tellurium-assets = { path = "../assets" }
+tellurium-input = { path = "../input" }
+tellurium-serialization = { path = "../serialization" }
+tempfile = "3"
+windows-sys = { version = "0.59", features = ["Win32_Foundation", "Win32_System_LibraryLoader"] }

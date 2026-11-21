@@ -1,0 +1,17 @@
+[package]
+name = "tellurium-scripting"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tellurium-serialization = { path = "../serialization" }
+tellurium-assets = { path = "../assets" }
+tellurium-safety = { path = "../safety" }
+tellurium-input = { path = "../input" }
+tellurium-core = { path = "../core" }
+tellurium-platform = { path = "../platform" }
+log = "0.4"
+mlua = { version = "0.11.6", features = ["luau"] }
+
+[features]
+editor = []

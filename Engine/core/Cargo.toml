@@ -1,0 +1,9 @@
+[package]
+name = "tellurium-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tellurium-bridge = { path = "../bridge" }
+tellurium-platform = { version = "0.1.0", path = "../platform" }
+serde = { version = "1", features = ["derive"] }

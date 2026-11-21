@@ -1,0 +1,14 @@
+[project]
+name = "Neon Courier"
+description = "A top-down courier trial. Follow five checkpoints in order and use the dash to complete faster laps. Move with WASD, arrows or the left stick. Dash with Space or A."
+
+[[input.contexts]]
+name = "Courier"
+priority = 0
+bindings = [
+    { action = "Move", source = { directions = { left = { key = "A" }, right = { key = "D" }, down = { key = "S" }, up = { key = "W" } } } },
+    { action = "Move", source = { directions = { left = { key = "Left" }, right = { key = "Right" }, down = { key = "Down" }, up = { key = "Up" } } } },
+    { action = "Move", source = { gamepad_axis = "left_stick" } },
+    { action = "Dash", source = { button = { key = "Space" } } },
+    { action = "Dash", source = { button = { gamepad = 4096 } } },
+]

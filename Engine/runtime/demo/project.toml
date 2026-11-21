@@ -1,0 +1,32 @@
+[input]
+
+[[input.contexts]]
+name = "GlobalContext"
+priority = 100
+bindings = [
+    { action = "ToggleUI", source = { button = { key = "Tab" } } },
+]
+
+[[input.contexts]]
+name = "UIContext"
+priority = 20
+active = false
+bindings = [
+    { action = "Confirm", source = { button = { key = "Space" } } },
+    { action = "Confirm", source = { button = { gamepad = 4096 } } },
+    { action = "Confirm", source = { button = { mouse = "Left" } } },
+    { action = "Pointer", source = { pointer = "position" } },
+]
+
+[[input.contexts]]
+name = "GameplayContext"
+priority = 0
+bindings = [
+    { action = "Jump", source = { button = { key = "Space" } } },
+    { action = "Jump", source = { button = { gamepad = 4096 } } },
+    { action = "Move", source = { directions = { left = { key = "A" }, right = { key = "D" }, down = { key = "S" }, up = { key = "W" } } } },
+    { action = "Move", source = { gamepad_axis = "left_stick" } },
+    { action = "Shoot", source = { button = { mouse = "Left" } } },
+    { action = "Shoot", source = { button = { gamepad = 16384 } } },
+    { action = "Look", source = { pointer = "motion" } },
+]

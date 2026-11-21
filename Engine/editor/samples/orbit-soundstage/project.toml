@@ -1,0 +1,32 @@
+[[input.contexts]]
+name = "Soundstage"
+priority = 0
+
+[[input.contexts.bindings]]
+action = "ChangeSpeed"
+
+[input.contexts.bindings.source.button]
+key = "T"
+
+[[input.contexts.bindings]]
+action = "ChangeSpeed"
+
+[input.contexts.bindings.source.button]
+gamepad = 16384
+
+[project]
+assets = "assets"
+description = "Two visible sound sources orbit a stationary listener. The cyan emitter plays Ogg/Vorbis ambience, and the gold emitter plays a WAV beacon. Use headphones and press T or gamepad X to switch rotation speed."
+engine_version = "0.1.0"
+graphics_backend = "dx12"
+main_scene = "scenes/main.telsc"
+name = "Orbit Soundstage"
+recent_scenes = ["scenes/main.telsc"]
+scene_format = "text"
+scenes = "scenes"
+
+[project.export]
+console = false
+icon = ""
+release = true
+target = ""

@@ -1,0 +1,16 @@
+[package]
+name = "tellurium-assets"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+bincode = "1.3"
+mlua = { version = "0.11.6", features = ["luau"] }
+png = "0.17"
+serde = { version = "1", features = ["derive"] }
+sha2 = "0.10"
+symphonia = { version = "0.5.5", default-features = false, features = ["ogg", "vorbis", "wav", "pcm", "adpcm"] }
+tempfile = "3"
+toml = "0.8"
+ufbx = "0.11.5"
+uuid = { version = "1", features = ["v4", "serde"] }

@@ -1,0 +1,22 @@
+# Build products and generated Windows templates
+target/
+/Engine/templates/windows/tellurium_runtime.exe
+/Engine/templates/windows/redistributables/
+/Engine/templates/windows/.template-*/
+
+# Local editor data and asset caches
+.tellurium/
+TelluriumData/
+.telcache/
+.obsidian/
+*.telsave
+*-Windows/
+*-Windows-[0-9]*/
+
+# Environment and operating system files
+.env
+.env.*
+!.env.example
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,10 @@
+[package]
+name = "tellurium-bullet"
+version.workspace = true
+edition.workspace = true
+links = "tellurium_bullet"
+
+[build-dependencies]
+cc = { version = "1", features = ["parallel"] }
+flate2 = "1"
+tar = "0.4"

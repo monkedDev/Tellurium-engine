@@ -1,0 +1,6 @@
+id = "ded114e4-fc04-4514-b268-2dbb3b9d9639"
+source_hash = "b22aba41ecdba26a0b5e3c82be8b8f65af8c89a18f7c34cce2e061275e173cdb"
+
+[settings]
+flip_vertical = false
+audio_mono = false

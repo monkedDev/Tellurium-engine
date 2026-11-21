@@ -1,0 +1,19 @@
+[package]
+name = "tellurium-bridge"
+version.workspace = true
+edition.workspace = true
+
+[features]
+profiling = []
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+tellurium-bullet = { path = "../physics-cpp" }
+tellurium-miniaudio = { path = "../audio-cpp" }
+cxx = "1.0"
+raw-window-handle = { version = "0.6", features = ["std"] }
+
+[build-dependencies]
+cxx-build = "1.0"
+flate2 = "1"
+tar = "0.4"

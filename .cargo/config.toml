@@ -1,0 +1,5 @@
+[env]
+# LLVM-MinGW uses libc++. GCC-based toolchains can set CXXSTDLIB_x86_64_pc_windows_gnu=stdc++.
+CXXSTDLIB_x86_64_pc_windows_gnu = "c++"
+# Luau's parser needs this declaration with the LLVM-MinGW headers.
+CXXFLAGS_x86_64_pc_windows_gnu = "-include cstdlib"

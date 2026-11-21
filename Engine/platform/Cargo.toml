@@ -1,0 +1,12 @@
+[package]
+name = "tellurium-platform"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+log = "0.4"
+winit = "0.30"
+
+[target."cfg(windows)".dependencies]
+windows-sys = { version = "0.61.2", features = ["Win32_UI_Input_XboxController"] }
